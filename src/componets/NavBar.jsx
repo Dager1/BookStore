@@ -1,14 +1,15 @@
 import React from "react";
+import "./NavBar.css";
 
 function NavBar() {
   return (
-    <div>
+    <div className="navbar">
       <div>
         <input></input>
-        <button></button>
+        <button>Serach</button>
       </div>
       <div>
-        <h1 className="header1">Nerd Store</h1>
+        <div className="title">Nerd Store</div>
       </div>
       <diV>
         <button>Profile</button>
