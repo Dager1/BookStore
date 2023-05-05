@@ -54,5 +54,10 @@
   button:hover {
     background-color: #0056b3;
   }
+
+  .log{
+    display: flex;
+    justify-content: space-around;
+  }
   
   
