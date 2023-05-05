@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Registertion.css";
+import "./Registeration.css";
+import { Link } from "react-router-dom";
 
 function Registeration() {
   const [name, setName] = useState("");
@@ -21,11 +22,11 @@ function Registeration() {
       <form>
         <div>Register</div>
         <div>
-          <div>Name:</div>{" "}
+          <div>Name:</div>
           <input value={name} onChange={handelNameChange}></input>
         </div>
         <div>
-          <div>Email:</div>{" "}
+          <div>Email:</div>
           <input value={email} onChange={handelEmailChange}></input>
         </div>
         <div>
@@ -34,7 +35,7 @@ function Registeration() {
         </div>
         <div className="log">
           <button>Register</button>
-          {/* <link to="/Login">Already have an account?</link>*/}
+          <Link to="/">Already have an account?</Link>
         </div>
       </form>
     </div>
