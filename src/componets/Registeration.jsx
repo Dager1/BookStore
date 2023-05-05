@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Registertion.css";
 
 function Registeration() {
   const [name, setName] = useState("");
@@ -16,24 +17,26 @@ function Registeration() {
   };
 
   return (
-    <div>
-      <div>Register</div>
-      <div>
-        <div>Name:</div>{" "}
-        <input value={name} onChange={handelNameChange}></input>
-      </div>
-      <div>
-        <div>Email:</div>{" "}
-        <input value={email} onChange={handelEmailChange}></input>
-      </div>
-      <div>
-        <div>Password:</div>
-        <input value={password} onChange={handelPasswordChange}></input>
-      </div>
-      <div>
-        <button>Register</button>
-        <link to="/Login">Already have an account?</link>
-      </div>
+    <div className="registeration">
+      <form>
+        <div>Register</div>
+        <div>
+          <div>Name:</div>{" "}
+          <input value={name} onChange={handelNameChange}></input>
+        </div>
+        <div>
+          <div>Email:</div>{" "}
+          <input value={email} onChange={handelEmailChange}></input>
+        </div>
+        <div>
+          <div>Password:</div>
+          <input value={password} onChange={handelPasswordChange}></input>
+        </div>
+        <div className="log">
+          <button>Register</button>
+          {/* <link to="/Login">Already have an account?</link>*/}
+        </div>
+      </form>
     </div>
   );
 }
