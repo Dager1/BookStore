@@ -39,10 +39,14 @@ function NavBar() {
       <div>
         {results.map((result) => {
           return (
-            <img
-              src={result.volumeInfo.imageLinks.smallThumbnail}
-              alt={result.title}
-            />
+            <div className="books">
+              <img
+                src={result.volumeInfo.imageLinks.smallThumbnail}
+                alt={result.title}
+              />
+              <div>{result.volumeInfo.authors}</div>
+              <div>{result.title}</div>
+            </div>
           );
         })}
       </div>
